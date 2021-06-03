@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 21%, rgba(20,20,20,1) 32%, rgba(52,52,52,1) 100%);
+    color: seashell;
+    font-family: 'Roboto', sans-serif;
+}
+
+table, p {
+    font-weight: 300;
+}
+
+/* navbar */
+header {
+    background-color: rgba(52,52,52,1);
+    height: 3rem;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    color: seashell;
+
+    -webkit-transition: color 0.7s;
+    -moz-transition:    color 0.7s;
+    -ms-transition:     color 0.7s;
+    -o-transition:      color 0.7s;
+    transition:         color 0.7s;
+}
+
+header button:hover {
+    cursor: pointer;
+    color: royalblue;
+}
+
+/* Hi message */
+
+#about_me p:nth-child(1) {
+    font-size: 2.5em;
+    font-weight: 900;
+    border-bottom: seashell 1px solid;
+}
+
+#about_me p:nth-child(2) {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Containers & elements */
+.info > div{
+    background-color: rgba(176,176,176,0.1);
+    border-radius: 25px;
+    box-shadow:  20px 20px 60px #151515,
+    -20px -20px 60px #1f1f1f;
+}
+#user_info > div > p{
+    border-left: seashell 1px solid;
+}
+
+table td:nth-child(2) {
+    font-weight: 500;
+}
+
+ul {
+    list-style-type:none
+}
+
+span {
+    color: royalblue;
+}
+
+
+/* Fade IN effects */
+.fade_in1 {
+    animation: fadeIn 2s;
+}
+
+.fade_in2 {
+    animation: fadeIn 4.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+/* Projects */
+
+#proj img {
+    box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out;
+}
+
+#proj img:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+    opacity: 0.5;
+}
