@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+    --accent-light: seashell; 
+    --accent-blue: royalblue;
+    --card-background: rgba(176,176,176,0.1);
+    --opacity: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: rgb(0,0,0);
+    background: rgb(48, 48, 48);
     background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 21%, rgba(20,20,20,1) 32%, rgba(52,52,52,1) 100%);
-    color: seashell;
+    color: var(--accent-light);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,7 +33,7 @@ header button {
     border: none;
     font-family: inherit;
     font-weight: 400;
-    color: seashell;
+    color: var(--accent-light);
 
     -webkit-transition: color 0.7s;
     -moz-transition:    color 0.7s;
@@ -37,7 +44,7 @@ header button {
 
 header button:hover {
     cursor: pointer;
-    color: royalblue;
+    color: var(--accent-blue);
 }
 
 /* Hi message */
@@ -55,7 +62,7 @@ header button:hover {
 
 /* Containers & elements */
 .info > div{
-    background-color: rgba(176,176,176,0.1);
+    background-color: var(--card-background);
     border-radius: 25px;
     box-shadow:  20px 20px 60px #151515,
     -20px -20px 60px #1f1f1f;
@@ -104,11 +111,11 @@ span {
 
 #proj img {
     box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 #proj img:hover {
     cursor: pointer;
     transform: scale(1.05); 
-    opacity: 0.5;
 }
+
