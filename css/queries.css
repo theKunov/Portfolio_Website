@@ -1,5 +1,13 @@
 @media only screen and (max-width: 650px) {
 
+    #navbar {
+        float: none;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+
+    #about_me { 
+        width: 100%;
+    }
     .info > div{
         width: 90%;
     }
@@ -12,6 +20,7 @@
     }
 
     #about_me p:nth-child(1) {
+        margin-top: 20px;
         font-size: 1.5em;
     }
     

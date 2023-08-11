@@ -103,11 +103,11 @@ table td:nth-child(1) {
 
 /* projects */
 
-#proj {
+#projects {
     margin-bottom: 2em;
 }
 
-#proj img {
+#projects img {
     min-width: 200px;
     max-width: 16%;
     border-radius: 30px;

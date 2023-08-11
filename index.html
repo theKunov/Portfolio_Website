@@ -1,50 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132815758-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-132815758-1');
-</script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <script src="https://kit.fontawesome.com/8388b47e40.js" crossorigin="anonymous"></script>
+    <script src="./js/scrollToSection.js"></script>
     <script src="./js/fade.js" async></script>
     <link rel="stylesheet" href="./css/links.css">
-    
-    <!-- Google Tag Manager -->
-       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WHFF34B');</script>
-<!-- End Google Tag Manager -->
-    
-<!-- Google Optimize -->
-   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-PK4853V"></script>
-    
-    
     <title>Portfolio | Borislav Kunov</title>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHFF34B"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    
     <header>
         <div id="navbar">
-            <button onclick="location.href='#user_info'"><span>/</span>About me</button>
-            <button onclick="location.href='#education'"><span>/</span>Education</button>
-            <button onclick="location.href='#work'"><span>/</span>Work</button>
-            <button onclick="location.href='#proj'"><span>/</span>Projects</button>
+            <button onclick="scrollToSection(event, '#user_info')"><span>/</span>About me</button>
+            <button onclick="scrollToSection(event, '#stack')"><span>/</span>Stack</button>
+            <button onclick="scrollToSection(event, '#education')"><span>/</span>Education</button>
+            <button onclick="scrollToSection(event, '#work')"><span>/</span>Work</button>
+            <button onclick="scrollToSection(event, '#projects')"><span>/</span>Projects</button>
         </div>
     </header>
 
@@ -54,8 +29,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="./images/portrait.png" alt="">
             </picture>
             <div class="text fade_in2 align-middle">
-                <p><span>Hi!</span> My name is Bobby.</p>
-                <p>Tech and Design are my passion. <br> So I decided to combine them becoming front end developer.</p>
+                <p><span>Hi!</span> My name is Borislav.</p>
+                <p>Experienced front-end developer skilled in crafting captivating and user-friendly websites that elevate brands and deliver seamless user experiences.</p>
             </div>
         </div>
 
@@ -66,15 +41,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span>{</span>
                 <p> firstName: <b>Borislav</b>;<br>
                     lastName: <b>Kunov</b>; <br>
-                    born: <b>1995</b>;<br>
                     email: <b><a href="mailto:borislav.r.kunov@gmail.com">borislav.r.kunov@gmail.com</a></b>;<br>
-                    phoneNumber: <a href="tel:+359876878681"><b>+359876878681</b></a> ;
+                    phoneNumber: <a href="tel:+359876878681"><b>+359 876 878 681</b></a> ;
                 </p>
                 <span>};</span>
             </div>
         </div>
         
-    
+        <div class="info hideme" id="stack">       
+            <div>
+                <h2><i class="fas fa-code"></i> Frameworks <span>/</span> Languages</h2>
+                <ul >  
+                    <li><span>/</span> React</li>
+                    <li><span>/</span> Javascript</li>
+                    <li><span>/</span> HTML</li>
+                    <li><span>/</span> LESS</li>
+                    <li><span>/</span> CSS3</li>
+                    <li><span>/</span> Git</li>
+                    <li><span>/</span> GitLab</li>
+                    <li><span>/</span> BitBucket</li>
+                    <li><span>/</span> Docker</li>
+                    <li><span>/</span> Bootstrap</li>
+                    <li><span>/</span> Smarty</li>
+                    <li><span>/</span> Python</li>
+                    <li><span>/</span> Selenium</li>
+                </ul>
+
+                <h2>Software:</h2>
+                <ul>
+                    <li><span>/</span> Visual Studio Code</li>
+                    <li><span>/</span> PHP Storm</li>
+                    <li><span>/</span> Photoshop</li>
+                    <li><span>/</span> Illustrator</li>
+                </ul>
+            </div>
+        
+        </div>
+
         <div class="info hideme" id="education">
                 <div>
                     <table >
@@ -98,7 +101,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <table>
                         <tr>
                             <td>Name:</td>
-                            <td>Javascript Programming Fundamentals</td>
+                            <td>ReactJS</td>
                         </tr>
                         <tr>
                             <td>Plaftorm:</td>
@@ -109,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <table>
                         <tr>
                             <td>Name:</td>
-                            <td>Javascript Programming Basic</td>
+                            <td>Javascript Programming Fundamentals</td>
                         </tr>
                         <tr>
                             <td>Plaftorm:</td>
@@ -138,41 +141,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <td>Software University</td>
                         </tr>
                     </table>
-                    <hr>
-                    <h3><span><</span> Curently studying <span>></span></h3>
-                    <ul>
-                        <li> - React (The Complete Guide)</li>
-                        <li> - HarvardX CS50 introduction to Computer Science</li>
-                    </ul>
                 </div>
-        </div>
-
-        <div class="info hideme">       
-            <div>
-                <h2><i class="fas fa-code"></i> Frameworks <span>/</span> Languages</h2>
-                <ul >  
-                    <li><span>/</span> Javascript</li>
-                    <li><span>/</span> HTML</li>
-                    <li><span>/</span> CSS3</li>
-                    <li><span>/</span> Bootstrap</li>
-                    <li><span>/</span> Python</li>
-                    <li><span>/</span> Selenium</li>
-                </ul>
-
-                <h2>Software:</h2>
-                <ul>
-                    <li><span>/</span> Visual Studio Code</li>
-                    <li><span>/</span> Photoshop</li>
-                    <li><span>/</span> Illustrator</li>
-                </ul>
-            </div>
-        
         </div>
 
         <div class="info hideme" id="work">
             <div >
-                <h2><i class="fas fa-briefcase"></i> <span>let</span> workExperience <span>=</span></h2>
+                <h2><i class="fas fa-briefcase"></i> <span>const</span> workExperience <span>=</span></h2>
 
+                <ul class="work-exp">
+                    <li>Collaborated closely with the design team to implement the company's brand redesign vision, ensuring a seamless transition from concept to implementation.</li>
+                    <li>Developed and maintained user-facing features, including interactive interfaces and dynamic content, contributing to an improved user experience.</li>
+                    <li>Utilized JavaScript to enhance interactivity and user engagement.</li>
+                    <li>Implemented responsive web design principles, ensuring optimal user experience across various devices and screen sizes.</li>
+                    <li>Integrate front end interfaces with backend systems, facilitating efficient data exchange.</li>
+                    <li>Conducted thorough testing and debugging across different browsers to ensure cross-browser compatibility and consistent performance.</li>
+                    <li>Actively participated in code reviews, providing constructive feedback to peers and improving code quality.</li>
+                    <li>Collaborated with the QA team to identify and address front end-related issues.</li>
+                </ul>
+
+                <table >
+                    <tr>
+                        <td class="job_title">Title:</td>
+                        <td><b>Front- End Developer</b></td>
+                    </tr>
+                    <tr>
+                        <td>Company:</td>
+                        <td>Mansion Group</td>
+                    </tr>
+                    <tr>
+                        <td>Period:</td>
+                        <td>Jun 2022 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td>Sofia / Bulgaria</td>
+                    </tr>
+                </table>  
+                <hr>
                 <table >
                     <tr>
                         <td class="job_title">Title:</td>
@@ -184,7 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </tr>
                     <tr>
                         <td>Period:</td>
-                        <td>01.08.2021 - till now</td>
+                        <td>Aug 2021 - Jun 2022</td>
                     </tr>
                     <tr>
                         <td>Location:</td>
@@ -203,77 +208,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </tr>
                     <tr>
                         <td>Period:</td>
-                        <td>01.07.2020 - 30.07.2021</td>
+                        <td>Jul 2020 - Jul 2021</td>
                     </tr>
                     <tr>
                         <td>Location:</td>
                         <td>Varna / Bulgaria</td>
                     </tr>
                 </table>
-                <hr>
-                <table>
-                    <tr>
-                        <td class="job_title">Title:</td>
-                        <td><b>Cook / Shift Manager</b></td>
-                    </tr>
-                    <tr>
-                        <td>Company:</td>
-                        <td>House of pizza</td>
-                    </tr>
-                    <tr>
-                        <td>Period:</td>
-                        <td>01.05.2018 - 10.09.2018</td>
-                    </tr>
-                    <tr>
-                        <td>Location:</td>
-                        <td>Provincetown / USA</td>
-                    </tr>
-                </table>
-                <hr>
-                <table>
-                    <tr>
-                        <td class="job_title">Title:</td>
-                        <td><b>Cook</b></td>
-                    </tr>
-                    <tr>
-                        <td>Company:</td>
-                        <td>Red Inn</td>
-                    </tr>
-                    <tr>
-                        <td>Period:</td>
-                        <td>20.05.2018 - 10.09.2018</td>
-                    </tr>
-                    <tr>
-                        <td>Location:</td>
-                        <td>Provincetown / USA</td>
-                    </tr>
-                </table>
-                <hr>
-                <table>
-                    <tr>
-                        <td class="job_title">Title:</td>
-                        <td><b>Houseman / Shift Manager</b></td>
-                    </tr>
-                    <tr>
-                        <td>Company:</td>
-                        <td>Crystal Beach Hotel</td>
-                    </tr>
-                    <tr>
-                        <td>Period:</td>
-                        <td>15.05.2017 - 01.09.2017</td>
-                    </tr>
-                    <tr>
-                        <td>Location:</td>
-                        <td>Ocean City / USA</td>
-                    </tr>
-                </table>
             </div>
     </div>
         
-        <div class="info hideme" id="proj">  
+        <div class="info hideme" id="projects">  
             <div>
                 <h2><i class="fas fa-code-branch"></i> Projects</h2>
-                <p><span>/</span> View more projects:<a href="https://github.com/theKunov" target="_blank"> Github <i class="fab fa-github"></i></a></p>
+                
                 
                 
                 <a href="https://longneckstower.com/" target="_blank">
@@ -340,11 +288,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </a>
                         
                 </div>
+
+                <p><span>/</span> View more projects:<a href="https://github.com/theKunov" target="_blank"> Github <i class="fab fa-github"></i></a></p>
                 
             </div>
         </div>
 
     </main>
-
 </body>
 </html>
