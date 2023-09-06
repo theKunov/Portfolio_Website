@@ -130,3 +130,13 @@ span {
     transform: scale(1.05); 
 }
 
+
+#projects .casino-logo {
+    min-width: 130px;
+    width: 150px;
+    margin: 0 0 0 10px;
+}
+
+.forbidden-message {
+    font-size: 10px;
+}
