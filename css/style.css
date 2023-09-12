@@ -52,12 +52,14 @@ header button:hover {
 #about_me p:nth-child(1) {
     font-size: 2.5em;
     font-weight: 900;
+    line-height: 1.1em;
     border-bottom: seashell 1px solid;
 }
 
 #about_me p:nth-child(2) {
     font-size: 1.5em;
     font-weight: 700;
+    line-height: 1.1em;
 }
 
 /* Containers & elements */
